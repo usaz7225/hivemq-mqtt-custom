@@ -319,8 +319,8 @@ limitations under the License.
 
         $('#urlInput').val(websocketserver);
         $('#portInput').val(websocketport);
-        $('#userInput').val(clientusername);
-        $('#pwInput').val(clientpassword);
+        $('#userInput').val('<?php echo $DeviceUsername; ?>');
+        $('#pwInput').val('<?php echo $DevicePassword; ?>');
         $('#clientIdInput').val('clientId-' + randomString(10));
 
         $('#colorChooser').minicolors();
