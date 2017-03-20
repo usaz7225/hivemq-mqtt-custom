@@ -102,7 +102,7 @@ limitations under the License.
 
                     <div class="large-1 columns">
                         <label>SSL</label>
-                        <input id="sslInput" type="checkbox"/>
+                        <input id="sslInput" type="checkbox" checked="checked"/>
                     </div>
 
                     <div class="large-2 columns">
