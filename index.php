@@ -97,7 +97,7 @@ limitations under the License.
 
                     <div class="large-2 columns">
                         <label>Keep Alive</label>
-                        <input id="keepAliveInput" type="text" value="60"/>
+                        <input id="keepAliveInput" type="text" value="30"/>
                     </div>
 
                     <div class="large-1 columns">
@@ -319,8 +319,8 @@ limitations under the License.
 
         $('#urlInput').val(websocketserver);
         $('#portInput').val(websocketport);
-        $('#userInput').val('<?php echo $DeviceUsername; ?>');
-        $('#pwInput').val('<?php echo $DevicePassword; ?>');
+        $('#userInput').val('<?php echo getenv("DeviceUsername"); ?>');
+        $('#pwInput').val('<?php echo getenv("DevicePassword"); ?>');
         $('#clientIdInput').val('clientId-' + randomString(10));
 
         $('#colorChooser').minicolors();
